@@ -1,9 +1,9 @@
 package cn.huanzi.qch.baseadmin.config.security;
 
-import cn.huanzi.qch.baseadmin.sys.sysuser.service.SysUserService;
-import cn.huanzi.qch.baseadmin.sys.sysuser.vo.SysUserVo;
-import cn.huanzi.qch.baseadmin.sys.sysuserauthority.service.SysUserAuthorityService;
-import cn.huanzi.qch.baseadmin.sys.sysuserauthority.vo.SysUserAuthorityVo;
+import cn.huanzi.qch.baseadmin.service.system.SysUserService;
+import cn.huanzi.qch.baseadmin.vo.SysUserVo;
+import cn.huanzi.qch.baseadmin.service.system.SysUserAuthorityService;
+import cn.huanzi.qch.baseadmin.vo.SysUserAuthorityVo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.authority.AuthorityUtils;
 import org.springframework.security.core.userdetails.User;

@@ -1,13 +1,13 @@
 package cn.huanzi.qch.baseadmin;
 
-import cn.huanzi.qch.baseadmin.sys.sysmenu.vo.SysMenuVo;
-import cn.huanzi.qch.baseadmin.sys.syssetting.service.SysSettingService;
-import cn.huanzi.qch.baseadmin.sys.syssetting.vo.SysSettingVo;
-import cn.huanzi.qch.baseadmin.sys.sysshortcutmenu.service.SysShortcutMenuService;
-import cn.huanzi.qch.baseadmin.sys.sysshortcutmenu.vo.SysShortcutMenuVo;
-import cn.huanzi.qch.baseadmin.sys.sysuser.service.SysUserService;
-import cn.huanzi.qch.baseadmin.sys.sysuser.vo.SysUserVo;
-import cn.huanzi.qch.baseadmin.sys.sysusermenu.service.SysUserMenuService;
+import cn.huanzi.qch.baseadmin.vo.SysMenuVo;
+import cn.huanzi.qch.baseadmin.service.system.SysSettingService;
+import cn.huanzi.qch.baseadmin.vo.SysSettingVo;
+import cn.huanzi.qch.baseadmin.service.system.SysShortcutMenuService;
+import cn.huanzi.qch.baseadmin.vo.SysShortcutMenuVo;
+import cn.huanzi.qch.baseadmin.service.system.SysUserService;
+import cn.huanzi.qch.baseadmin.vo.SysUserVo;
+import cn.huanzi.qch.baseadmin.service.system.SysUserMenuService;
 import cn.huanzi.qch.baseadmin.util.*;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -36,7 +36,7 @@ import java.net.UnknownHostException;
 import java.util.List;
 
 @EnableAsync//开启异步调用
-@SpringBootApplication
+@SpringBootApplication(scanBasePackages = {"cn.huanzi.qch.baseadmin"})
 public class BaseAdminApplication {
 
     public static void main(String[] args) {

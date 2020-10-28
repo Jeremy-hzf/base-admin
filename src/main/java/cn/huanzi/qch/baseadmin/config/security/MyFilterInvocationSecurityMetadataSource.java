@@ -1,6 +1,6 @@
 package cn.huanzi.qch.baseadmin.config.security;
 
-import cn.huanzi.qch.baseadmin.sys.sysauthority.vo.SysAuthorityVo;
+import cn.huanzi.qch.baseadmin.vo.SysAuthorityVo;
 import org.springframework.security.access.ConfigAttribute;
 import org.springframework.security.access.SecurityConfig;
 import org.springframework.security.web.FilterInvocation;

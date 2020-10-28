@@ -36,10 +36,14 @@ public class SafetyAspect {
     /**
      * Pointcut 切入点
      * 匹配
-     * cn.huanzi.qch.baseadmin.sys.*.controller、
+     * cn.huanzi.qch.baseadmin.controller下面所有的方法
      * cn.huanzi.qch.baseadmin.*.controller包下面的所有方法
+     *
+     * 例：
+     * cn.huanzi.qch.baseadmin.controller.*.*.*(..))
+     * cn.huanzi.qch.baseadmin.controller.system.SysUserController.*(..)
      */
-    @Pointcut(value = "execution(public * cn.huanzi.qch.baseadmin.sys.*.controller.*.*(..)) || " +
+    @Pointcut(value = "execution(public * cn.huanzi.qch.baseadmin.controller.*.*.*(..)) || " +
             "execution(public * cn.huanzi.qch.baseadmin.*.controller.*.*(..))")
     public void safetyAspect() {}
 

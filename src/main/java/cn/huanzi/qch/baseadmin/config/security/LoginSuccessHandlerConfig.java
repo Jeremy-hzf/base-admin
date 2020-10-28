@@ -1,7 +1,7 @@
 package cn.huanzi.qch.baseadmin.config.security;
 
-import cn.huanzi.qch.baseadmin.sys.sysuser.service.SysUserService;
-import cn.huanzi.qch.baseadmin.sys.sysuser.vo.SysUserVo;
+import cn.huanzi.qch.baseadmin.service.system.SysUserService;
+import cn.huanzi.qch.baseadmin.vo.SysUserVo;
 import cn.huanzi.qch.baseadmin.util.*;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;

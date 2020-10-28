@@ -1,8 +1,8 @@
 package cn.huanzi.qch.baseadmin.user.service;
 
 import cn.huanzi.qch.baseadmin.common.pojo.Result;
-import cn.huanzi.qch.baseadmin.sys.sysuser.service.SysUserService;
-import cn.huanzi.qch.baseadmin.sys.sysuser.vo.SysUserVo;
+import cn.huanzi.qch.baseadmin.service.system.SysUserService;
+import cn.huanzi.qch.baseadmin.vo.SysUserVo;
 import cn.huanzi.qch.baseadmin.util.MD5Util;
 import cn.huanzi.qch.baseadmin.util.SecurityUtil;
 import org.springframework.beans.factory.annotation.Autowired;

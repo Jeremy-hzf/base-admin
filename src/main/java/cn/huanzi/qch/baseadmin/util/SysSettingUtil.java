@@ -1,6 +1,6 @@
 package cn.huanzi.qch.baseadmin.util;
 
-import cn.huanzi.qch.baseadmin.sys.syssetting.vo.SysSettingVo;
+import cn.huanzi.qch.baseadmin.vo.SysSettingVo;
 
 import java.util.concurrent.ConcurrentHashMap;
 

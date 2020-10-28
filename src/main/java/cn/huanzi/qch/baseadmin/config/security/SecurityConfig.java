@@ -1,8 +1,9 @@
 package cn.huanzi.qch.baseadmin.config.security;
 
-import cn.huanzi.qch.baseadmin.sys.sysauthority.service.SysAuthorityService;
-import cn.huanzi.qch.baseadmin.sys.sysauthority.vo.SysAuthorityVo;
+import cn.huanzi.qch.baseadmin.service.system.SysAuthorityService;
+import cn.huanzi.qch.baseadmin.vo.SysAuthorityVo;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.security.access.AccessDecisionVoter;
 import org.springframework.security.access.vote.RoleVoter;
@@ -50,6 +51,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     private MyInvalidSessionStrategy myInvalidSessionStrategy;
 
     @Autowired
+    @Qualifier("primaryDataSource")
     private DataSource dataSource;
 
     @Override
